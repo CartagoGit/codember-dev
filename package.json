@@ -1,0 +1,28 @@
+{
+	"name": "codember-dev",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "npx nodemon"
+	},
+	"author": "Cartago <cv2cartago@gmail.com> (https://github.com/CartagoGit)",
+	"license": "MIT",
+	"dependencies": {
+		"typescript": "^4.8.4"
+	},
+	"devDependencies": {
+		"@types/node": "^18.11.9",
+		"@types/typescript": "^2.0.0",
+		"nodemon": "^2.0.20",
+		"ts-node": "^10.9.1"
+	},
+	"nodemonConfig": {
+		"watch": [
+			"src"
+		],
+		"ext": "ts",
+		"exec": "npx ts-node src/core/index.ts"
+	}
+}
